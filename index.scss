@@ -1,0 +1,114 @@
+:root {
+  --secondary-color: rgb(148 163 184);
+  --primary-color: #E2E8F0;
+  --background-color: rgb(9, 6, 35);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  .container {
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .brief {
+      padding: 20px;
+      h1 {
+        font-size: 40px;
+        color: var(--primary-color);
+        letter-spacing: 0.001em;
+        text-transform: capitalize;
+        padding: 10px 0;
+      }
+      h3 {
+        font-size: 22px;
+        color: var(--primary-color);
+        letter-spacing: 0.001em;
+        text-transform: capitalize;
+        padding: 10px 0;
+      }
+      p {
+        font-size: 16px;
+        color: var(--secondary-color);
+        letter-spacing: 0.001em;
+        padding: 10px 0;
+        line-height: 28px;
+      }
+      ul {
+        padding: 15px;
+      }
+      ul li {
+        list-style-type: none;
+        padding: 8px;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+    }
+    .details {
+      padding: 20px;
+      p {
+        font-size: 14px;
+        color: var(--secondary-color);
+        letter-spacing: 0.01em;
+        padding: 10px 15px;
+        line-height: 28px;
+      }
+      .experience--container {
+        padding: 28px 0;
+        .experience {
+          display: flex;
+          padding: 15px;
+          gap: 10px;
+          .year {
+            padding: 10px 0;
+            min-width: 150px;
+            text-transform: uppercase;
+            h3 {
+              color: var(--secondary-color);
+              font-size: 12px;
+            }
+          }
+          .description {
+            padding: 10px 0;
+            h3 {
+              color: var(--primary-color);
+            }
+            p {
+              padding: 10px 0;
+            }
+            ul {
+              padding: 15px 0;
+              display: flex;
+              gap: 10px;
+            }
+            ul li {
+              list-style-type: none;
+              color: #42A59C;
+              border-radius: 18px;
+              background-color: #112B3A;
+              padding: 10px;
+              font-size: 12px;
+              font-weight:800;
+              text-transform: uppercase;
+            }
+          }
+          &:hover {
+            background-color: rgba(148, 163, 184, 0.129);
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
